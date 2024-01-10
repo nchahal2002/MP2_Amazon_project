@@ -1,4 +1,7 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/navbar";
+
 
 function App() {
   return (
@@ -6,6 +9,7 @@ function App() {
       <Router>
 
         <Routes>
+          <Navbar />
           <Route path="/"/>
           <Route path="/cart"/>
         </Routes>
@@ -13,3 +17,5 @@ function App() {
     </div>
   )
 }
+
+export default App;
